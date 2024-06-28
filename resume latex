@@ -1,0 +1,191 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Hyperref setup
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black,
+  citecolor=black
+}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large\textcolor{black}
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Paras Jain}} & Email: \href{mailto:pj9279247@gmail.com}{pj9279247@gmail.com} \\
+  \href{https://www.linkedin.com/in/paras-jain-77b2a624b/}{Linkedin} & Mobile:~~~+91-9821099097 \\
+  \href{https://github.com/pjbeast23}{Github} & \\
+  \href{https://leetcode.com/u/pj_failure2004/}{Leetcode}\\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {AVB PUBLIC SCHOOL}{Delhi, India}
+      {Class X (CBSE); Percentage: 96.6\%}{2019 - 2020}
+    \resumeSubheading
+      {AVB PUBLIC SCHOOL}{Delhi, India}
+      {Class XII (CBSE); Percentage: 96.4\%}{2021 - 2022}
+    \resumeSubheading
+      {Netaji Subhas University Of Technology}{Delhi, India}
+      {Bachelor of Technology - Computer Science; GPA: 8.52}{Nov 2022 - June 2026}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning,  Databases}}}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Skills Summary}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Python, PHP, C, C++, JavaScript, SQL, Java, HTML, CSS, Golang, Rust}
+    \resumeSubItem{Frameworks}{ReactJS, NodeJS, NextJS}
+    \resumeSubItem{Tools}{GIT, MySQL, SQLite, PostgreSQL}
+    \resumeSubItem{Platforms}{Web, Windows, MAC, Linux, AWS}
+    \resumeSubItem{Soft Skills}{Leadership, Event Management, Writing, Public Speaking, Time Management}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Job Recruiter Portal \href{https://github.com/pjbeast23/JobRecruiterPortal}{(GitHub)}}{}{}{}
+      \resumeItemListStart
+      \vspace{-0.4cm}
+        \resumeItem{Web Application Development}
+          {Designed and developed a comprehensive web application that facilitates job recruitment processes, enabling job seekers to apply for jobs and recruiters to post job details.}
+        \resumeItem{Feature Implementation}
+          {Implemented key features such as user authentication, job search functionality, application tracking system, and profile management for both job seekers and recruiters.}
+        \resumeItem{Technology Stack}
+          {Utilized Next.js for server-side rendering and efficient routing, along with HTML, CSS, and JavaScript for frontend development.and data storage was managed using a Mongodb database.}
+         
+        \resumeItem{Collaboration and Source Control}{Maintained and documented the codebase on GitHub, ensuring version control and collaborative development.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Notes Making App \href{https://github.com/pjbeast23/NotesApp-React}{(GitHub)}}{}{}{}
+      \resumeItemListStart
+      \vspace{-0.4cm}
+        \resumeItem{Web Application Development}
+          {Developed a React-based web app for creating, editing, and deleting notes with customizable colors.}
+        \resumeItem{Feature Implementation}
+          {Implemented note creation, color customization, editing, and deletion with a responsive UI.}
+        \resumeItem{State Management}
+          {Utilized React's state management with useState and useEffect hooks.}
+        \resumeItem{Technology Stack}
+          {Used React, HTML, CSS, and JavaScript for frontend development.}
+        \resumeItem{Collaboration}
+          {Maintained and documented the codebase on GitHub. Demonstrated proficiency in React and frontend development.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------POSITIONS-----------------
+\section{Positions Of Responsibility}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Devcomm- International Developers Community (August ’23 - Present)}{Working as a DSA HEAD junior council member in Devcomm society}
+    \resumeSubItem{Moksha-Innovision - Team Member (April 2023)}{Worked as a Team Member in the Logistics team of Moksha, the annual Cultural and Technical fest of the college.}
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------------
+\section{Achievements}
+  \begin{itemize}[itemsep=0pt, topsep=0pt]
+    \item Secured \textbf{99.52 percentile} in JEE MAINS \hfill June-2022
+    \item Qualified JEE ADVANCED \hfill August-2022
+    \item Indian Olympiad Qualifier in Maths (IOQM) Merit \hfill September-2021
+    \item Indian Olympiad Qualifier in Astronomy (IOQA) Merit \hfill November-2021
+  \end{itemize}
+
+%-----------COMPETITIVE PROGRAMMING-----------------
+\section{Competitive Programming}
+  \begin{itemize}[itemsep=0pt, topsep=0pt]
+    \item Over 750 questions solved on Leetcode
+    \item \textbf{(Max Rating 1762)} 3 star on CodeChef-  \hfill \href{https://www.codechef.com/users/pjfailure}{CodeChef Profile}
+    \item \textbf{(Max Rating 1285)} Pupil on Codeforces
+\hfill\href{https://www.codechef.com/users/your_username}{Codeforces Profile}
+    \item Secured \textbf{global rank 111} in Starters 107 Division 4
+    \item Secured \textbf{global rank 203} in Starters 121 Division 3
+  \end{itemize}
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graphs Camp By Algo-University (Backed by Y-Combinator)}{\href{https://drive.google.com/file/d/1i04tes_wnvaPNyVKIsK1UsGagRXO57Tw/view?usp=sharing}{Certificate} - May 2024}{}{}
+      \resumeItemListStart
+      \vspace{-0.2cm}
+    {Training course led by a Codeforces master on Advanced Graphs Problems.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {The Science Of Happiness and Wellbeing}{\href{https://drive.google.com/file/d/1qJL1b32kZU6VD3xQ0EAOb_tXroqUTyou/view?usp=sharing}{Certificate} - June 2024}{}{}
+      \resumeItemListStart
+       \vspace{-0.2cm}
+        {8-week long online training course offered by NPTEL Swayam Portal on The Science Of Happiness and Wellbeing.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Yoga and Positive Psychology}{\href{https://drive.google.com/file/d/1cIHyLfsI7hHTyFlfFUvpJth4eRODavHL/view?usp=sharing}{Certificate} - May 2024}{}{}
+      \resumeItemListStart
+      \vspace{-0.2cm}
+    {8-week long online training course offered by NPTEL Swayam Portal on Yoga and Positive Psychology.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}

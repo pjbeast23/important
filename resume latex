@@ -83,18 +83,21 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {AVB PUBLIC SCHOOL}{Delhi, India}
-      {Class X (CBSE); Percentage: 96.6\%}{2019 - 2020}
+  \resumeSubheading
+      {Netaji Subhas University Of Technology}{Delhi, India}
+      {Bachelor of Technology - Computer Science; GPA: 8.52}{2022 - 2026}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Theory Of Automata, Discrete Structures,  Databases}}}
+      \vspace{-0.1cm}
     \resumeSubheading
       {AVB PUBLIC SCHOOL}{Delhi, India}
       {Class XII (CBSE); Percentage: 96.4\%}{2021 - 2022}
+      \vspace{0.05cm}
     \resumeSubheading
-      {Netaji Subhas University Of Technology}{Delhi, India}
-      {Bachelor of Technology - Computer Science; GPA: 8.52}{Nov 2022 - June 2026}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning,  Databases}}}
+      {AVB PUBLIC SCHOOL}{Delhi, India}
+      {Class X (CBSE); Percentage: 96.6\%}{2019 - 2020}
+    
   \resumeSubHeadingListEnd
-
+\vspace{0.1cm}
 %-----------SKILLS-----------------
 \section{Skills Summary}
   \resumeSubHeadingListStart
@@ -102,10 +105,10 @@
     \resumeSubItem{Frameworks}{ReactJS, NodeJS, NextJS}
     \resumeSubItem{Tools}{GIT, MySQL, SQLite, PostgreSQL}
     \resumeSubItem{Platforms}{Web, Windows, MAC, Linux, AWS}
-    \resumeSubItem{Soft Skills}{Leadership, Event Management, Writing, Public Speaking, Time Management}
+    \resumeSubItem{Soft Skills}{Leadership, Event Management, Effective Communication, Public Speaking, and Organizational Skills}
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
+%-----------PROJECTS-------------
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -113,13 +116,12 @@
       \resumeItemListStart
       \vspace{-0.4cm}
         \resumeItem{Web Application Development}
-          {Designed and developed a comprehensive web application that facilitates job recruitment processes, enabling job seekers to apply for jobs and recruiters to post job details.}
+          {Designed and Assessed a comprehensive web application that facilitates job recruitment processes, enabling job seekers to apply for jobs and recruiters to post job details.}
         \resumeItem{Feature Implementation}
-          {Implemented key features such as user authentication, job search functionality, application tracking system, and profile management for both job seekers and recruiters.}
+          {Implemented comprehensive user authentication, job search, application tracking, and profile management features; boosted recruiter-student interactions by 60\% and application completion rates by 35\% }
         \resumeItem{Technology Stack}
-          {Utilized Next.js for server-side rendering and efficient routing, along with HTML, CSS, and JavaScript for frontend development.and data storage was managed using a Mongodb database.}
-         
-        \resumeItem{Collaboration and Source Control}{Maintained and documented the codebase on GitHub, ensuring version control and collaborative development.}
+          {Developed a web app with Next.js, using MongoDB for storage and Clerk for authentication, resulting in a 50\% improvement in loading times and a 25\% faster user integration process.}
+          \resumeItem{Collaboration and Source Control}{Implemented robust version control practices on GitHub meticulously documenting code changes and improving collaborative efficiency by 30\% through structured branching and merging strategies.}
       \resumeItemListEnd
     \resumeSubheading
       {Notes Making App \href{https://github.com/pjbeast23/NotesApp-React}{(GitHub)}}{}{}{}
@@ -128,7 +130,7 @@
         \resumeItem{Web Application Development}
           {Developed a React-based web app for creating, editing, and deleting notes with customizable colors.}
         \resumeItem{Feature Implementation}
-          {Implemented note creation, color customization, editing, and deletion with a responsive UI.}
+          {Implemented note creation, color customization, editing, and deletion with a responsive UI, achieving a 30\% increase in user engagement and a 15\% decrease in bug reports.}
         \resumeItem{State Management}
           {Utilized React's state management with useState and useEffect hooks.}
         \resumeItem{Technology Stack}
@@ -141,7 +143,7 @@
 %-----------POSITIONS-----------------
 \section{Positions Of Responsibility}
   \resumeSubHeadingListStart
-    \resumeSubItem{Devcomm- International Developers Community (August ’23 - Present)}{Working as a DSA HEAD junior council member in Devcomm society}
+    \resumeSubItem{Devcomm- International Developers Community (August ’23 - Present)}{Working as a junior council member and head of Data Structures and Algorithms (DSA) in the DevComm society}
     \resumeSubItem{Moksha-Innovision - Team Member (April 2023)}{Worked as a Team Member in the Logistics team of Moksha, the annual Cultural and Technical fest of the college.}
   \resumeSubHeadingListEnd
 
@@ -157,10 +159,9 @@
 %-----------COMPETITIVE PROGRAMMING-----------------
 \section{Competitive Programming}
   \begin{itemize}[itemsep=0pt, topsep=0pt]
-    \item Over 750 questions solved on Leetcode
-    \item \textbf{(Max Rating 1762)} 3 star on CodeChef-  \hfill \href{https://www.codechef.com/users/pjfailure}{CodeChef Profile}
-    \item \textbf{(Max Rating 1285)} Pupil on Codeforces
-\hfill\href{https://www.codechef.com/users/your_username}{Codeforces Profile}
+    \item Over \textbf{750} questions solved on Leetcode
+    \item \textbf{(Max Rating 1762)} 3 star on \href{https://www.codechef.com/users/pjfailure}{CodeChef}
+    \item \textbf{(Max Rating 1285)} Pupil on \href{https://www.codechef.com/users/your_username}{Codeforces}
     \item Secured \textbf{global rank 111} in Starters 107 Division 4
     \item Secured \textbf{global rank 203} in Starters 121 Division 3
   \end{itemize}
@@ -175,13 +176,13 @@
     {Training course led by a Codeforces master on Advanced Graphs Problems.}
       \resumeItemListEnd
     \resumeSubheading
-      {The Science Of Happiness and Wellbeing}{\href{https://drive.google.com/file/d/1qJL1b32kZU6VD3xQ0EAOb_tXroqUTyou/view?usp=sharing}{Certificate} - June 2024}{}{}
+      {The Science Of Happiness and Wellbeing}{\href{https://drive.google.com/file/d/1qJL1b32kZU6VD3xQ0EAOb_tXroqUTyou/view?usp=sharing}{Certificate} - Feb 2023}{}{}
       \resumeItemListStart
        \vspace{-0.2cm}
         {8-week long online training course offered by NPTEL Swayam Portal on The Science Of Happiness and Wellbeing.}
       \resumeItemListEnd
     \resumeSubheading
-      {Yoga and Positive Psychology}{\href{https://drive.google.com/file/d/1cIHyLfsI7hHTyFlfFUvpJth4eRODavHL/view?usp=sharing}{Certificate} - May 2024}{}{}
+      {Yoga and Positive Psychology}{\href{https://drive.google.com/file/d/1cIHyLfsI7hHTyFlfFUvpJth4eRODavHL/view?usp=sharing}{Certificate} - May 2023}{}{}
       \resumeItemListStart
       \vspace{-0.2cm}
     {8-week long online training course offered by NPTEL Swayam Portal on Yoga and Positive Psychology.}

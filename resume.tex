@@ -1,0 +1,196 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4.5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeSubItemListStart}{\begin{itemize}[leftmargin=0.25in]}
+\newcommand{\resumeSubItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% ----------HEADING----------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Jai Swarup}} & Email : \href{mailto:jaiswarup0@gmail.com}{jaiswarup0@gmail.com}\\
+  \href{https://jaiswarup.netlify.app/}{https://jaiswarup.netlify.app/} & Mobile : +91 88009 53145 \\
+  \href{https://github.com/JaiSwarup/}{GitHub} \\ \href{https://www.linkedin.com/in/jai-swarup-19b250262/}{LinkedIn}
+  \vspace{-10pt}
+\end{tabular*}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Netaji Subhas University of Technology }{New Delhi}
+      {B. Tech, Computer Science Engineering; CGPA : \emph{8.24}}{2022 - Present}
+      \resumeItemListStart
+      \resumeItem{\textbf{Relevant Coursework} : Operating Systems, Data Structures, Analysis Of Algorithms, Theory Of Automata, Discrete Structures, Databases}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Pragati Public School}{New Delhi}
+      {CBSE, Class XII; Percentage : \emph{96.8}}{2021 - 2022}
+    \resumeSubheading
+      {Pragati Public School}{New Delhi}
+      {CBSE, Class X; Percentage : \emph{93.8}}{2019 - 2020}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+   \resumeSubHeadingListStart
+     \resumeProjectHeading
+         {\textbf{Chat App} $|$ \emph{Next.js, Pusher.js, Typescript, Tailwind CSS}}{June 2024}
+         \resumeItemListStart
+           \resumeItem{\href{https://chat-app-swart-psi.vercel.app/} {Live Demo} $|$ \href{https://github.com/JaiSwarup/chat-app} {Github Repo}}
+           \resumeItem{Developed a highly scalable chat application enabling seamless communication with real-time features.}
+           \resumeItem{Implemented user authentication, image uploads using secure practices in Typescript.}
+           \resumeItem{Designed a user-friendly and responsive UI with Tailwind CSS, leading to a 95\% satisfaction rate from 20+ users.}
+         \resumeItemListEnd
+     \resumeProjectHeading
+         {\textbf{Weather App} $|$ \emph{HTML, CSS, JavaScript}}{May 2023}
+         \resumeItemListStart
+         \resumeItem{\href{https://jaiswarup.github.io/weatherapp.github.io/} {Live Demo} $|$ \href{https://github.com/JaiSwarup/weatherapp} {Github Repository}}
+           \resumeItem{Built a user-centric weather application providing real-time weather updates at a glance.}
+           \resumeItem{Integrated the OpenWeatherMap API for accurate data retrieval, handling up to 1000 daily requests efficiently.}
+           \resumeItem{Prioritized a clean and intuitive UI, achieving a remarkable 90\% user satisfaction rate.}
+         \resumeItemListEnd
+     \resumeProjectHeading
+         {\textbf{Practice Projects}}{}
+         \resumeItemListStart
+         \resumeItem{\href{https://github.com/JaiSwarup/knights-crusade} {Knights-Crusade} $|$ \href{https://github.com/JaiSwarup/MemeBot} {Discord Bot} $|$ \href{https://github.com/JaiSwarup/calculatorapp.github.io} {Calculator}
+         } 
+         \resumeItemListEnd
+   \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, JavaScript, TypeScript, Python, C++} \\
+    \textbf{Frontend}{: React, HTML, CSS, Tailwind, Bootstrap} \\
+     \textbf{Frameworks \& Libraries}{: Next.js, Pusher.js,  Redux Toolkit} \\
+    \textbf{Backend}{: Express, MongoDB, SQL, Git} \\
+     \textbf{Developer Tools}{: GitHub, VS Code, Intellij Idea, MySQL, Figma, Postman} \\
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Achievements}
+    \resumeSubItemListStart
+    \resumeSubItem{Ranked \textbf{4607} in \textbf{JEE MAINS} and  \textbf{9819} in \textbf{JEE ADVANCED}}
+    \resumeSubItem{Ranked \textbf{486} in \textbf{COMED-K}}
+    \resumeSubItem{Over \textbf{400} questions solved on {\href{https://leetcode.com/u/jaiswarup/} {LeetCode} with a contest rating of \textbf{1632}}}
+    \resumeSubItem{\textbf{Pupil Rank} on {\href{https://codeforces.com/profile/JaiSwarup} {CodeForces}} with a Max Rating of \textbf{1291} and \textbf{3 star} on {\href{https://www.codechef.com/users/jswarup} {CodeChef} with a Max Rating of \textbf{1607}}}
+    \resumeSubItem{1st Place in XeroCrypt (Nationwide Decrypting Competition Organized by Devcomm NSUT)}
+    \resumeSubItemListEnd
+
+%-----------POSITIONS OF RESPONSIBILITY-----------
+\section{Positions Of Responsibility}
+  \resumeSubHeadingListStart
+  \resumeSubSubheading{\textbf{Joint Secretary $|$ IEEE NSUT}}{August 2023 - Present}
+  \begin{itemize}[leftmargin=0.00in, label={}]
+      \item \small{Worked as a volunteer and contributed for designs of posts, standees and banners for DSSYWC'2024, the flagship event of IEEE Delhi Section, with a footfall of over 1000 attendees.}\vspace{-8pt}
+  \end{itemize}
+  \resumeSubSubheading{\textbf{Department Head $|$ Subhasha NSUT}}{May 2024 - Present}
+  \begin{itemize}[leftmargin=0.00in, label={}]
+      \item \small{Organised various events as the Department Head namely Shounen Games 2.0 (50+ attendees), Cultural Movie Screenings (40+ attendees), etc.} 
+  \end{itemize}
+  \resumeSubHeadingListEnd
+
+\section{Certifications}
+  \resumeSubHeadingListStart
+  \resumeSubheading{\href{https://drive.google.com/file/d/1qH5033p0NnD63DeI8x-vEhOdY9jHhWKa/view?usp=sharing}{Graphs Camp By Algo-University (Backed by Y-Combinator)}}{May 2024}{A Bootcamp on Advanced Graphs Problems led by Manas Verma, a Codeforces master.}{}
+    \resumeSubheading{\href{https://drive.google.com/file/d/1SIK_fqf9tIvGYe6WjGBMvU5WY8jyrhOW/view?usp=drive_link}{Yoga and Positive Psychology}}{October 2023}{NPTEL course offered by IIT Bombay about Yoga and Positive Psychology.}{}
+    \resumeSubheading{\href{https://drive.google.com/file/d/1pLg4yd5fhL1-FMYDrg1IVxhwm8l4tXe8/view?usp=sharing}{The Science Of Happiness and Wellbeing}}{April 2023}{NPTEL course offered by  by IIT Kharagpur about the Science of Happiness and Wellbeing.}{}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

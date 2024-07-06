@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -7,8 +7,23 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
 \usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -17,176 +32,165 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.530in}
-\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.75in}
-\addtolength{\textheight}{1.2in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
-\urlstyle{rm}
+\urlstyle{same}
 
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Hyperref setup
-\hypersetup{
-  colorlinks=true,
-  urlcolor=blue,
-  linkcolor=black,
-  citecolor=black
-}
-
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-12pt}\scshape\raggedright\large\textcolor{black}
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    {#1 \vspace{-4pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{#3} & \textit{#4} \\
-    \end{tabular*}\vspace{-8pt}
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-9pt}
+}
 
-\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4.5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeSubItemListStart}{\begin{itemize}[leftmargin=0.25in]}
+\newcommand{\resumeSubItemListEnd}{\end{itemize}\vspace{-6pt}}
 
-%-----------------------------
-%%%%%%  CV STARTS HERE  %%%%%%
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-%----------HEADING-----------------
+% ----------HEADING----------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Paras Jain}} & Email: \href{mailto:pj9279247@gmail.com}{pj9279247@gmail.com} \\
-  \href{https://www.linkedin.com/in/paras-jain-77b2a624b/}{Linkedin} & Mobile:~~~+91-9821099097 \\
-  \href{https://github.com/pjbeast23}{Github} & \\
-  \href{https://leetcode.com/u/pj_failure2004/}{Leetcode}\\
+  \textbf{{\Large Paras Jain}} & Email : \href{mailto:jaiswarup0@gmail.com}{pj9279247@gmail.com}\\
+\href{https://leetcode.com/u/pj_failure2004/}{LeetCode} & Mobile : +91 98210 99097 \\
+  \href{https://github.com/pjbeast23/}{GitHub} \\ \href{https://www.linkedin.com/in/paras-jain-77b2a624b/}{LinkedIn}
+  \vspace{-10pt}
 \end{tabular*}
 
-%-----------EDUCATION-----------------
+%-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-  \resumeSubheading
-      {Netaji Subhas University Of Technology}{Delhi, India}
-      {Bachelor of Technology - Computer Science; GPA: 8.52}{2022 - 2026}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Theory Of Automata, Discrete Structures,  Databases}}}
-      \vspace{-0.1cm}
     \resumeSubheading
-      {AVB PUBLIC SCHOOL}{Delhi, India}
-      {Class XII (CBSE); Percentage: 96.4\%}{2021 - 2022}
-      \vspace{0.05cm}
+      {Netaji Subhas University of Technology }{New Delhi}
+      {B. Tech, Computer Science Engineering; CGPA : \emph{8.52}}{2022 - 2026}
+      \resumeItemListStart
+      \resumeItem{\textbf{Relevant Coursework} : Operating Systems, Data Structures, Analysis Of Algorithms, Theory Of Automata, Discrete Structures, Databases}
+      \resumeItemListEnd
     \resumeSubheading
-      {AVB PUBLIC SCHOOL}{Delhi, India}
-      {Class X (CBSE); Percentage: 96.6\%}{2019 - 2020}
-    
-  \resumeSubHeadingListEnd
-\vspace{0.1cm}
-%-----------SKILLS-----------------
-\section{Skills Summary}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Languages}{Python, PHP, C, C++, JavaScript, SQL, Java, HTML, CSS, Golang, Rust}
-    \resumeSubItem{Frameworks}{ReactJS, NodeJS, NextJS}
-    \resumeSubItem{Tools}{GIT, MySQL, SQLite, PostgreSQL}
-    \resumeSubItem{Platforms}{Web, Windows, MAC, Linux, AWS}
-    \resumeSubItem{Soft Skills}{Leadership, Event Management, Effective Communication, Public Speaking, and Organizational Skills}
+      {AVB Public School}{New Delhi}
+      {CBSE, Class XII; Percentage : \emph{96.4}}{2021 - 2022}
+    \resumeSubheading
+      {AVB Public School}{New Delhi}
+      {CBSE, Class X; Percentage : \emph{96.6}}{2019 - 2020}
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-------------
+%-----------PROJECTS-----------
 \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Job Recruiter Portal \href{https://github.com/pjbeast23/JobRecruiterPortal}{(GitHub)}}{}{}{}
-      \resumeItemListStart
-      \vspace{-0.4cm}
-        \resumeItem{Web Application Development}
-          {Designed and Assessed a comprehensive web application that facilitates job recruitment processes, enabling job seekers to apply for jobs and recruiters to post job details.}
-        \resumeItem{Feature Implementation}
-          {Implemented comprehensive user authentication, job search, application tracking, and profile management features; boosted recruiter-student interactions by 60\% and application completion rates by 35\% }
-        \resumeItem{Technology Stack}
-          {Developed a web app with Next.js, using MongoDB for storage and Clerk for authentication, resulting in a 50\% improvement in loading times and a 25\% faster user integration process.}
-          \resumeItem{Collaboration and Source Control}{Implemented robust version control practices on GitHub meticulously documenting code changes and improving collaborative efficiency by 30\% through structured branching and merging strategies.}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Notes Making App \href{https://github.com/pjbeast23/NotesApp-React}{(GitHub)}}{}{}{}
-      \resumeItemListStart
-      \vspace{-0.4cm}
-        \resumeItem{Web Application Development}
-          {Developed a React-based web app for creating, editing, and deleting notes with customizable colors.}
-        \resumeItem{Feature Implementation}
-          {Implemented note creation, color customization, editing, and deletion with a responsive UI, achieving a 30\% increase in user engagement and a 15\% decrease in bug reports.}
-        \resumeItem{State Management}
-          {Utilized React's state management with useState and useEffect hooks.}
-        \resumeItem{Technology Stack}
-          {Used React, HTML, CSS, and JavaScript for frontend development.}
-        \resumeItem{Collaboration}
-          {Maintained and documented the codebase on GitHub. Demonstrated proficiency in React and frontend development.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+   \resumeSubHeadingListStart
+     \resumeProjectHeading
+         {\textbf{Job Recruiter Portal } $|$ \emph{Next.js, Clerk, Typescript, Tailwind CSS, MongoDb}}{June 2024}
+         \resumeItemListStart
+           \resumeItem{\href{https://job-recruiter-portal.vercel.app/} {Live Demo} $|$ \href{https://github.com/pjbeast23/JobRecruiterPortal} {Github Repo}}
+           \resumeItem{Developed a highly scalable job recruitment portal enabling seamless interaction between job seekers and recruiters.}
+           \resumeItem{Implemented secure user authentication and authorization using Clerk with efficient MongoDB data handling }
+           \resumeItem{Designed a user-friendly and responsive UI with Tailwind CSS, achieving a 90\% satisfaction rate from over 100 users.}
+         \resumeItemListEnd
+     \resumeProjectHeading
+         {\textbf{Weather App} $|$ \emph{HTML, CSS, JavaScript}}{May 2023}
+         \resumeItemListStart
+         \resumeItem{\href{https://gdsc-web-d.vercel.app/} {Live Demo} $|$ \href{https://github.com/pjbeast23/GDSC-WEB-D} {Github Repository}}
+           \resumeItem{Built a user-centric weather application delivering instant, real-time weather updates with ease.}
+           \resumeItem{Integrated OpenWeatherMap API for precise data retrieval, managing up to 700 daily requests efficiently.}
+           \resumeItem{Focused on a clean and intuitive UI design, achieving an outstanding 95\% user satisfaction rate.}
+         \resumeItemListEnd
+     \resumeProjectHeading
+         {\textbf{Practice Projects}}{}
+         \resumeItemListStart
+         \resumeItem{\href{https://github.com/pjbeast23/NotesApp-React} {Notes-App} $|$ \href{https://github.com/pjbeast23/Eye-Wellness-Extension} {Eye Wellness Extension} $|$ \href{https://github.com/pjbeast23/travel-website} {Travel Website}
+         } 
+         \resumeItemListEnd
+   \resumeSubHeadingListEnd
 
-%-----------POSITIONS-----------------
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, JavaScript, TypeScript, Python, C++, Rust, Golang} \\
+    \textbf{Frontend}{: React, HTML, CSS, Tailwind, Bootstrap} \\
+     \textbf{Frameworks \& Libraries}{: Next.js, Redux Toolkit} \\
+    \textbf{Backend}{: Express, MongoDB, SQL, Git, Supabase, Convex} \\
+     \textbf{Developer Tools}{: GitHub, VS Code, Intellij Idea, MySQL, Figma, Postman, Git Commands} \\
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Achievements}
+    \resumeSubItemListStart
+    \resumeSubItem{Ranked \textbf{4434} in \textbf{JEE Mains}}
+    \resumeSubItem{Over \textbf{750} questions solved on {\href{https://leetcode.com/u/pj_failure2004/} {LeetCode}}}
+    \resumeSubItem{\textbf{Pupil Rank} on {\href{https://codeforces.com/profile/pj9279247} {CodeForces}} with a Max Rating of \textbf{1285} and \textbf{3 star} on {\href{https://www.codechef.com/users/pjfailure} {CodeChef} with a Max Rating of \textbf{1762}}}
+    \resumeSubItem{IOQM merit(Demonstrated strong mathematical problem-solving skills)}
+     \resumeSubItem{IOQA merit(Demonstrated exceptional astronomy knowledge and problem-solving abilities)}
+    \resumeSubItemListEnd
+
+%-----------POSITIONS OF RESPONSIBILITY-----------
 \section{Positions Of Responsibility}
   \resumeSubHeadingListStart
-    \resumeSubItem{Devcomm- International Developers Community (August ’23 - Present)}{Working as a junior council member and head of Data Structures and Algorithms (DSA) in the DevComm society}
-    \resumeSubItem{Moksha-Innovision - Team Member (April 2023)}{Worked as a Team Member in the Logistics team of Moksha, the annual Cultural and Technical fest of the college.}
+  \resumeSubSubheading{\textbf{DSA Head $|$ DevComm NSUT}}{August 2023 - Present}
+  \begin{itemize}[leftmargin=0.00in, label={}]
+      \item \small{Organized DSA Special Interest Groups (SIGs) for juniors, attracting over 200 attendees.}\vspace{-8pt}
+  \end{itemize}
+  \resumeSubSubheading{\newline \textbf{Member $|$ IEEE NSUT}}{May 2024 - Present}
+  \begin{itemize}[leftmargin=0.00in, label={}]
+      \item \small{Coordinated and managed technical events with over 1000 attendees, emphasizing cutting-edge technology and facilitating skill development among members.} 
+  \end{itemize}
   \resumeSubHeadingListEnd
 
-%-----------AWARDS-----------------
-\section{Achievements}
-  \begin{itemize}[itemsep=0pt, topsep=0pt]
-    \item Secured \textbf{99.52 percentile} in JEE MAINS \hfill June-2022
-    \item Qualified JEE ADVANCED \hfill August-2022
-    \item Indian Olympiad Qualifier in Maths (IOQM) Merit \hfill September-2021
-    \item Indian Olympiad Qualifier in Astronomy (IOQA) Merit \hfill November-2021
-  \end{itemize}
-
-%-----------COMPETITIVE PROGRAMMING-----------------
-\section{Competitive Programming}
-  \begin{itemize}[itemsep=0pt, topsep=0pt]
-    \item Over \textbf{750} questions solved on Leetcode
-    \item \textbf{(Max Rating 1762)} 3 star on \href{https://www.codechef.com/users/pjfailure}{CodeChef}
-    \item \textbf{(Max Rating 1285)} Pupil on \href{https://www.codechef.com/users/your_username}{Codeforces}
-    \item Secured \textbf{global rank 111} in Starters 107 Division 4
-    \item Secured \textbf{global rank 203} in Starters 121 Division 3
-  \end{itemize}
-
-%-----------CERTIFICATIONS-----------------
 \section{Certifications}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Graphs Camp By Algo-University (Backed by Y-Combinator)}{\href{https://drive.google.com/file/d/1i04tes_wnvaPNyVKIsK1UsGagRXO57Tw/view?usp=sharing}{Certificate} - May 2024}{}{}
-      \resumeItemListStart
-      \vspace{-0.2cm}
-    {Training course led by a Codeforces master on Advanced Graphs Problems.}
-      \resumeItemListEnd
-    \resumeSubheading
-      {The Science Of Happiness and Wellbeing}{\href{https://drive.google.com/file/d/1qJL1b32kZU6VD3xQ0EAOb_tXroqUTyou/view?usp=sharing}{Certificate} - Feb 2023}{}{}
-      \resumeItemListStart
-       \vspace{-0.2cm}
-        {8-week long online training course offered by NPTEL Swayam Portal on The Science Of Happiness and Wellbeing.}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Yoga and Positive Psychology}{\href{https://drive.google.com/file/d/1cIHyLfsI7hHTyFlfFUvpJth4eRODavHL/view?usp=sharing}{Certificate} - May 2023}{}{}
-      \resumeItemListStart
-      \vspace{-0.2cm}
-    {8-week long online training course offered by NPTEL Swayam Portal on Yoga and Positive Psychology.}
-      \resumeItemListEnd
+  \resumeSubheading{\href{https://drive.google.com/file/d/1i04tes_wnvaPNyVKIsK1UsGagRXO57Tw/view?usp=sharing}{Graphs Camp By Algo-University (Backed by Y-Combinator)}}{May 2024}{A Bootcamp on Advanced Graphs Problems led by Manas Verma, a Codeforces Master.}{}
+    \resumeSubheading{\href{https://drive.google.com/file/d/1cIHyLfsI7hHTyFlfFUvpJth4eRODavHL/view?usp=sharing}{Yoga and Positive Psychology}}{October 2023}{NPTEL course offered by IIT Bombay about Yoga and Positive Psychology.}{}
+    \resumeSubheading{\href{https://drive.google.com/file/d/1qJL1b32kZU6VD3xQ0EAOb_tXroqUTyou/view?usp=sharing}{The Science Of Happiness and Wellbeing}}{April 2023}{NPTEL course offered by  by IIT Kharagpur about the Science of Happiness and Wellbeing.}{}
   \resumeSubHeadingListEnd
 
+%-------------------------------------------
 \end{document}
